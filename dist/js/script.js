@@ -12,7 +12,7 @@
             id: {
                 mainTitle: "Kami Melayani dengan Hemat",
                 subtitle: "Apakah Anda siap untuk menjelajahi Jogja dan menciptakan kenangan tak terlupakan?",
-                home: "Home",
+                home: "Beranda",
                 paket: "Paket",
                 portfolio: "Portfolio",
                 kontak: "Kontak",
@@ -70,13 +70,13 @@ hamburger.addEventListener('click', function(){
 });
 
 
-window.addEventListener('click', function(e){
-    if(e.target != hamburger && e.target != navMenu ){
-        hamburger.classList.remove('hamburger-active');
-        navMenu.classList.add('hidden');
+// window.addEventListener('click', function(e){
+//     if(e.target != hamburger && e.target != navMenu ){
+//         hamburger.classList.remove('hamburger-active');
+//         navMenu.classList.add('hidden');
         
-    }
-});
+//     }
+// });
 
 // dark mode toggle
 const darkToggle = document.querySelector('#dark-toggle');

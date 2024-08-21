@@ -25,13 +25,13 @@
               <div class="flex items-center px-4">
                   <button id="hamburger" name="hamburger" type="buttom"
                   class="block absolute right-4 lg:hidden">
-                      <span class="hamburger-line transition duration-300  origin-top-left"></span>
-                      <span class="hamburger-line transition duration-300 "></span>
-                      <span class="hamburger-line transition duration-300  origin-bottom-left"></span>
+                      <span class="hamburger-line transition duration-200  origin-top-left"></span>
+                      <span class="hamburger-line transition duration-200 "></span>
+                      <span class="hamburger-line transition duration-200  origin-bottom-left"></span>
                   </button>
 
-                  <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none 
-                  lg:rounded-none">
+                  <nav id="nav-menu" class="hidden absolute py-6 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none 
+                  lg:rounded-none ">
                       <ul class="block lg:flex">
                           <li class="group">
                               <a href="#home" class="text-base text-dark py-2 mx-8 flex 
@@ -49,26 +49,14 @@
                           <li class="group">
                               <a href="#contact" class="text-base text-dark py-2 mx-8 flex 
                               group-hover:text-primary" id="kontak-link">Kontak</a>
-                          </li>
-                          <!-- <li class="flex items-center ">
-                              <div class="flex">
-                                    <span class="mr-2 text-sm text-slate-500">light</span>  
-                                    <input type="checkbox" id="dark-toggle" class="hidden">
-                                    <label for="dark-toggle">
-                                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full
-                                      bg-slate-500 p-1">
-                                          <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
-                                      </div>
-                                    </label>
-                                    <span class="ml-2 text-sm text-slate-500">dark</span>  
-                              </div>
-                          </li> -->
-                          <li class="items-center pl-8 my-auto">
-                            <select id="language-select" class="text-gray-800 border border-gray-300 rounded px-2 py-1">
-                                <option value="id">Indonesia</option>
-                                <option value="en">English</option>
-                            </select>
-                          </li>
+                            </li>
+                            
+                            <div class="items-center group pl-8 my-auto flex ">
+                              <select id="language-select" class="group-hover:text-primary text-gray-800 border border-gray-300 text-base rounded px-2 py-1">
+                                  <option value="id" class="text-xs md:text-xs lg:text-xs mb-4">Indonesia</option>
+                                  <option value="en" class="text-xs md:text-xs lg:text-xs mb-4">English</option>
+                              </select>
+                            </div>
                       </ul>
                       
                      
