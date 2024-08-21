@@ -11,8 +11,14 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Irish+Grover" />
     <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="src/input.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    
 </head>
-<body class="">
+<body>
    
  <!-- Header Start -->
  <header class="bg-white  top-0 left-0 backdrop-blur-[5px] bg-opacity-10  fixed w-full flex items-center z-10">
@@ -176,6 +182,71 @@
         </div>
     </section>
 
+<!-- Start Section Portfolio -->
+ <section id="portfolio">
+<div class="bg-slate-100 w-full mt-36 mx-auto mb-10">
+  <div class="pt-10 max-w-6xl mx-auto  w-auto text-center pb-5">
+    <h1 class="text-base md:text-md lg:text-2xl text-center  font-bold ">Portfolio</h1>
+    <p class="text-sm px-2 md:text-md lg:text-xl pt-5">Lihatlah beberapa perjalanan yang telah kami buat untuk para pelanggan 
+      kami! Di bawah ini adalah galeri yang menampilkan gambar-gambar dari paket wisata kami yang paling populer</p>
+  </div>
+  <div class=" mx-auto max-w-6xl bg-white border-none ">
+    <div class="slick-slider">
+      <div>
+        <img data-lazy="dist/img/Candi-Prambanan-Sore-Hari.jpg" class="mx-auto h-full object-cover" alt="ROUSHATOUR 1">
+      </div>
+      <div>
+        <img data-lazy="dist/img/Candi-Prambanan-Sore-Hari.jpg" class="mx-auto h-full object-cover" alt="ROUSHATOUR 2">
+      </div>
+      <div>
+        <img data-lazy="dist/img/Candi-Prambanan-Sore-Hari.jpg" class="mx-auto h-full object-cover" alt="ROUSHATOUR 3">
+      </div>
+      <div>
+        <img data-lazy="dist/img/Candi-Prambanan-Sore-Hari.jpg" class="mx-auto h-full object-cover" alt="ROUSHATOUR 4">
+      </div>
+      
+    </div>
+    <h1 class="text-xs text-primary sm:text-sm md:text-md lg:text-lg text-center">Kami siap membantu Anda merencanakan perjalanan yang sempurna!</h1>
+        
+    
+  </div>
+</div>
+ </section>
+<!-- End Section Portfolio -->
+
+<!-- swiperjs -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="dist/js/script.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slick-slider').slick({
+          lazyLoad: 'ondemand',
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 1024, // Ukuran layar iPad atau lebih kecil
+              settings: {
+                slidesToShow: 2, // Tampilkan 2 gambar
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 640, // Ukuran layar mobile
+              settings: {
+                slidesToShow: 1, // Tampilkan 1 gambar
+                slidesToScroll: 1,
+                horizontal: true // Gambar memanjang ke bawah
+              }
+            }
+          ]
+        });
+      });
+    </script>
 </body>
 </html>

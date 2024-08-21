@@ -13,6 +13,7 @@ module.exports = {
         dark :'#0f172a',
         secondary : '#64748b',
         transwhite:'FFFFFF',
+        abuabu : 'F2F2F2',
 
       },
       screens:{

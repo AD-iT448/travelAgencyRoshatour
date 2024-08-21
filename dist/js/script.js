@@ -89,3 +89,36 @@ if(darkToggle.checked){
     html.classList.remove('dark');
 }
 });
+
+
+// slick
+
+// $(document).ready(function(){
+//     $('.slick-slider').slick({
+//       lazyLoad: 'ondemand',
+//       infinite: true,
+//       slidesToShow: 3,
+//       slidesToScroll: 1,
+//       autoplay: true,
+//       autoplaySpeed: 2000,
+//       arrows: false,
+//       responsive: [
+//         {
+//           breakpoint: 1024, // Ukuran layar iPad atau lebih kecil
+//           settings: {
+//             slidesToShow: 2, // Tampilkan 2 gambar
+//             slidesToScroll: 1,
+//           }
+//         },
+//         {
+//           breakpoint: 640, // Ukuran layar mobile
+//           settings: {
+//             slidesToShow: 1, // Tampilkan 1 gambar
+//             slidesToScroll: 1,
+//             vertical: true // Gambar memanjang ke bawah
+//           }
+//         }
+//       ]
+//     });
+//   });
+
