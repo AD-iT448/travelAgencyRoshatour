@@ -14,7 +14,7 @@
                 subtitle: "Apakah Anda siap untuk menjelajahi Jogja dan menciptakan kenangan tak terlupakan?",
                 home: "Beranda",
                 paket: "Paket",
-                portfolio: "Portfolio",
+                portfolio: "Portofolio",
                 kontak: "Kontak",
                 deskripsiHome : "Apakah Anda siap untuk menjelajahi Jogja dan menciptakan kenangan tak terlupakan? Di   Roushatour, kami mengerti bahwa setiap perjalanan adalah kesempatan untuk  menemukan keajaiban baru, Kami berkomitmen untuk memberikan pengalaman yang dirancang khusus untuk memenuhi keinginan dan kebutuhan Anda."
             },
@@ -91,34 +91,26 @@ if(darkToggle.checked){
 });
 
 
-// slick
+// KONTAK
 
-// $(document).ready(function(){
-//     $('.slick-slider').slick({
-//       lazyLoad: 'ondemand',
-//       infinite: true,
-//       slidesToShow: 3,
-//       slidesToScroll: 1,
-//       autoplay: true,
-//       autoplaySpeed: 2000,
-//       arrows: false,
-//       responsive: [
-//         {
-//           breakpoint: 1024, // Ukuran layar iPad atau lebih kecil
-//           settings: {
-//             slidesToShow: 2, // Tampilkan 2 gambar
-//             slidesToScroll: 1,
-//           }
-//         },
-//         {
-//           breakpoint: 640, // Ukuran layar mobile
-//           settings: {
-//             slidesToShow: 1, // Tampilkan 1 gambar
-//             slidesToScroll: 1,
-//             vertical: true // Gambar memanjang ke bawah
-//           }
-//         }
-//       ]
-//     });
-//   });
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Mencegah form dari submit secara default
+    
+    // Ambil data dari form
+    var name = document.getElementById('fullName').value;
+    var email = document.getElementById('address').value;
+    var message = document.getElementById('message').value;
+    
+    // Nomor WhatsApp tujuan
+    var phoneNumber = '6282291748072'; // Ganti dengan nomor WhatsApp tujuan, gunakan kode negara tanpa "+".
+    
+    // Format pesan
+    var text = `Nama: ${fullName}%0AEmail: ${address}%0APesan: ${message}`;
+    
+    // URL API WhatsApp
+    var whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}`;
+    
+    // Buka WhatsApp
+    window.open(whatsappURL, '_blank');
+});
 
