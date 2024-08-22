@@ -68,6 +68,13 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+const ask = document.querySelector('#ask');
+const deskripsiline = document.querySelector('#deskripsi-line'); 
+
+ask.addEventListener('click', function(){
+    ask.classList.toggle('ask-active');
+    navMenu.classList.toggle('hidden');
+});
 
 
 // window.addEventListener('click', function(e){
