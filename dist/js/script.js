@@ -93,24 +93,9 @@ if(darkToggle.checked){
 
 // KONTAK
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Mencegah form dari submit secara default
-    
-    // Ambil data dari form
-    var name = document.getElementById('fullName').value;
-    var email = document.getElementById('address').value;
-    var message = document.getElementById('message').value;
-    
-    // Nomor WhatsApp tujuan
-    var phoneNumber = '6282291748072'; // Ganti dengan nomor WhatsApp tujuan, gunakan kode negara tanpa "+".
-    
-    // Format pesan
-    var text = `Nama: ${fullName}%0AEmail: ${address}%0APesan: ${message}`;
-    
-    // URL API WhatsApp
-    var whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${text}`;
-    
-    // Buka WhatsApp
-    window.open(whatsappURL, '_blank');
-});
+function sendToWhatsApp(){
+    const urlToWhatsApp = `https://wa.me/6281241539225?text=Halo,Nama Saya ${fullName.value}, dari ${address.value}, ${id=message.value}`;
+
+    window.open(urlToWhatsApp,"_blank");
+}
 

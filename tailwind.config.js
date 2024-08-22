@@ -11,9 +11,10 @@ module.exports = {
       colors:{
         primary : '#05C824',
         dark :'#0f172a',
-        secondary : '#64748b',
+        secondary : '#043A0D',
         transwhite:'FFFFFF',
         abuabu : 'F2F2F2',
+
 
       },
       screens:{
