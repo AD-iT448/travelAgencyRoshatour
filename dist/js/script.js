@@ -68,6 +68,7 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+
 const ask = document.querySelector('#ask');
 const deskripsiline = document.querySelector('#deskripsi-line'); 
 
@@ -83,7 +84,7 @@ ask.addEventListener('click', function(){
 //         navMenu.classList.add('hidden');
         
 //     }
-// });
+
 
 // dark mode toggle
 const darkToggle = document.querySelector('#dark-toggle');
@@ -106,3 +107,13 @@ function sendToWhatsApp(){
     window.open(urlToWhatsApp,"_blank");
 }
 
+
+document.getElementById('toggleButton').onclick = function() {
+    var description = document.getElementById('description');
+
+    if (description.classList.contains('hidden')) {
+      description.classList.remove('hidden');
+    } else {
+      description.classList.add('hidden');
+    }
+  };

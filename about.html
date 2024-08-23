@@ -111,19 +111,21 @@
 <!-- Start Section  -->
  <section>
 <div class="w-full mt-10 mx-auto mb-36 bg-slate-400">
-    <div class="max-w-6xl mx-auto w-auto bg-white">
+    <div class="max-w-6xl mx-auto w-auto ">
         <h1 class="p-2 text-base md:text-2xl lg:text-2xl font-bold">Apa yang Kami Tawarkan?</h1>
-        <div>
-            <button class="pt-2 max-w-6xl    flex  justify-between text-base" id="ask" name="ask">
-                <h5 class="text-primary font-bold px-2">Perjalanan yang Dipersonalisasi</h5>
+      
+           <div class="max-w-6xl mx-auto w-full  bg-yellow-300 px-4">  
+            
+            <button id="toggleButton" class=" py-2  w-full flex justify-between text-white rounded-md">
+                <span>Perjalanan yang Dipersonalisasi</span>
                 <img src="dist/img/icon/Icon-arah-bawah.png" alt="">
-            </button>
-            <div id="deskripsi-line" class=" bg-fuchsia-300 hidden">
-                Kami merancang perjalanan yang disesuaikan dengan minat, anggaran, 
-                dan jadwal Anda. Tidak ada dua perjalanan yang sama, karena kami tahu setiap pelanggan unik.
-            </div>
-
-        </div>
+              </button>
+              <div id="description" class=" text-left ml-5 bg-white  hidden">
+                <p class=" text-dark p-2 ">Kami merancang perjalanan yang disesuaikan dengan minat, anggaran, dan jadwal Anda. Tidak ada dua perjalanan yang sama, karena kami tahu setiap pelanggan unik.</p>
+              </div>
+        </div> 
+     
+          
     </div>
 </div>
  </section>
@@ -239,5 +241,17 @@
 
     <!-- Javascript -->
      <script src="dist/js/script.js"></script>
+     
+     <script>
+        document.getElementById('toggleButton').onclick = function() {
+          var description = document.getElementById('description');
+      
+          if (description.classList.contains('hidden')) {
+            description.classList.remove('hidden');
+          } else {
+            description.classList.add('hidden');
+          }
+        };
+     </script>
 </body>
 </html>
