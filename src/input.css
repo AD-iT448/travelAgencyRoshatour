@@ -6,6 +6,31 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%;}
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.text-typing-container {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 1px ;
+  white-space: nowrap;
+  letter-spacing: 0em;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+.text-typing {
+  @apply  text-sm md:text-3xl lg:text-4xl font-bold text-blue-500; /* Ini adalah class Tailwind CSS */
+  width: 100%; /* Digunakan untuk membuat efek typing */
+}
+
+
 .navbar-fixed{
     @apply fixed z-[9999] bg-white bg-opacity-80;
     backdrop-filter: blur(5px);
