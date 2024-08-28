@@ -161,7 +161,7 @@ if(darkToggle.checked){
 // KONTAK
 
 function sendToWhatsApp(){
-    const urlToWhatsApp = `https://wa.me/6281241539225?text=Halo,Nama Saya ${fullName.value}, dari ${address.value}, ${id=message.value}`;
+    const urlToWhatsApp = `https://wa.me/6281241539225?text=Halo,Nama Saya ${nama.value}, dari ${alamat.value}, ${id=pesan.value}`;
 
     window.open(urlToWhatsApp,"_blank");
 }
@@ -179,8 +179,8 @@ document.getElementById('toggleButton').onclick = function() {
 
 
 //   Hubungi admin fullday
-function sendToWhatsApp(){
-    const urlToWhatsAppPaketSatu = `https://wa.me/6281241539225?text=Halo,Nama Saya ${fullName.value}, dari ${address.value}, ${id=message.value}`;
+// function sendToWhatsApp(){
+//     const urlToWhatsAppPaketSatu = `https://wa.me/6281241539225?text=Halo,Nama Saya ${fullName.value}, dari ${address.value}, ${id=message.value}`;
 
-    window.open(urlToWhatsApp,"_blank");
-}
+//     window.open(urlToWhatsApp,"_blank");
+// }

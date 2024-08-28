@@ -206,32 +206,32 @@
         lebih lanjut atau ingin berkonsultasi langsung dengan tim kami, jangan ragu untuk menghubungi kami. Anda dapat Mengirim pesan WhatsApp melalui formulir di bawah ini:</p>
     </div>
   <div class=" mx-auto max-w-6xl border-none items-center pb-5 bg-white  ">
-    <form onsubmit="sendToWhatsAppAbout()">
+    <form onsubmit="kirimToWhatsAppAbout()">
       <div class="w-full lg:w-2/3 lg:mx-auto">
       <div class="w-full px-4 mb-8">
-        <label for="fullName" class=" text-base text-primary
+        <label for="namaku" class=" text-base text-primary
           font-bold" id="namaLengkap">Nama Lengkap</label>
-          <input type="text" id="fullName" name="fullName"  class="w-full bg-slate-200
+          <input type="text" id="namaku" name="namaku"  class="w-full bg-slate-200
            text-dark p-3 rounded-md focus:outline-none
-           focus:ring-primary focus:ring-1 focus:border-primary" id="fullName" />
+           focus:ring-primary focus:ring-1 focus:border-primary" id="namaku" />
       </div>
       <div class="w-full px-4 mb-8">
-        <label for="address" class=" text-base text-primary
+        <label for="alamatku" class=" text-base text-primary
           font-bold" id="alamatLengkap">Alamat</label>
-          <input type="text" name="address" id="address" class="w-full bg-slate-200
+          <input type="text" name="alamatku" id="alamatku" class="w-full bg-slate-200
            text-dark p-3 rounded-md focus:outline-none
-           focus:ring-primary focus:ring-1 focus:border-primary" id="address" />
+           focus:ring-primary focus:ring-1 focus:border-primary" id="alamatku" />
       </div>
      
       <div class="w-full px-4 mb-8">
-        <label for="message" class=" text-base text-primary
+        <label for="pesanku" class=" text-base text-primary
           font-bold" id="pesanLengkap">Pesan</label>
-          <textarea type="text" id="message" name="message" class="w-full bg-slate-200
+          <textarea type="text" id="pesanku" name="pesanku" class="w-full bg-slate-200
            text-dark p-3 rounded-md focus:outline-none
-           focus:ring-primary focus:ring-1 focus:border-primary h-32" id="message"></textarea>
+           focus:ring-primary focus:ring-1 focus:border-primary h-32" id="pesanku"></textarea>
       </div>
       <div class="items-center mx-auto w-11/12 md:w-full lg:w-full">
-          <button tipe="submit" class="text-base font-semibold text-white 
+          <button type="submit" class="text-base font-semibold text-white 
           bg-primary py-3 mx-auto   rounded-full w-full hover:opacity-80 
           hover:shadow-lg transition duration-500" id="kirimLengkap" >Kirim</button>
       </div>
@@ -352,6 +352,8 @@
      <script src="dist/js/script.js"></script>
      
      <script>
+// KONTAK
+
 
 
          // Perjalanan yang Dipersonalisasi
@@ -404,7 +406,11 @@
              descriptionLima.classList.add('hidden');
            }
          };
+         function kirimToWhatsAppAbout(){
+          const urlToWhatsAppAbout = `https://wa.me/6281241539225?text=Halo,Nama Saya ${namaku.value}, dari ${alamatku.value}, ${id=pesanku.value}`;
 
+          window.open(urlToWhatsAppAbout,"_blank");
+          }
 
         //  transalate for about
         const languageSelectAbout = document.getElementById('language-select-about');
@@ -550,6 +556,7 @@
         });
 
 
+
               // Hamburger
 
 const hamburgerAbout = document.querySelector('#hamburger-about');
@@ -568,13 +575,7 @@ askAbout.addEventListener('click', function(){
     navMenuAbout.classList.toggle('hidden');
 });
 
-// KONTAK
 
-function sendToWhatsAppAbout(){
-    const urlToWhatsApp = `https://wa.me/6281241539225?text=Halo,Nama Saya ${fullName.value}, dari ${address.value}, ${id=message.value}`;
-
-    window.open(urlToWhatsApp,"_blank");
-}
 
     </script>
 </body>
