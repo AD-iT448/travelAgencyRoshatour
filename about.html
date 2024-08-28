@@ -206,7 +206,7 @@
         lebih lanjut atau ingin berkonsultasi langsung dengan tim kami, jangan ragu untuk menghubungi kami. Anda dapat Mengirim pesan WhatsApp melalui formulir di bawah ini:</p>
     </div>
   <div class=" mx-auto max-w-6xl border-none items-center pb-5 bg-white  ">
-    <form onsubmit="sendToWhatsApp()">
+    <form onsubmit="sendToWhatsAppAbout()">
       <div class="w-full lg:w-2/3 lg:mx-auto">
       <div class="w-full px-4 mb-8">
         <label for="fullName" class=" text-base text-primary
@@ -567,6 +567,15 @@ askAbout.addEventListener('click', function(){
     askAbout.classList.toggle('ask-active');
     navMenuAbout.classList.toggle('hidden');
 });
+
+// KONTAK
+
+function sendToWhatsAppAbout(){
+    const urlToWhatsApp = `https://wa.me/6281241539225?text=Halo,Nama Saya ${fullName.value}, dari ${address.value}, ${id=message.value}`;
+
+    window.open(urlToWhatsApp,"_blank");
+}
+
     </script>
 </body>
 </html>
