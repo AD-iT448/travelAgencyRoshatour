@@ -353,23 +353,7 @@
      
      <script>
 
-      // Hamburger
 
-const hamburgerAbout = document.querySelector('#hamburger-about');
-const navMenuAbout = document.querySelector('#nav-menu-about'); 
-
-hamburgerAbout.addEventListener('click', function(){
-    hamburgerAbout.classList.toggle('hamburger-active');
-    navMenuAbout.classList.toggle('hidden');
-});
-
-const askAbout = document.querySelector('#ask');
-const deskripsilineAbout = document.querySelector('#deskripsi-line'); 
-
-askAbout.addEventListener('click', function(){
-    askAbout.classList.toggle('ask-active');
-    navMenuAbout.classList.toggle('hidden');
-});
          // Perjalanan yang Dipersonalisasi
          document.getElementById('toggleButtonSatu').onclick = function() {
            var descriptionSatu = document.getElementById('descriptionSatu');
@@ -564,6 +548,25 @@ askAbout.addEventListener('click', function(){
             kirimLenkapLink.textContent = terjemahan[lang].pakeKirimLenkapLink;
 
         });
+
+
+              // Hamburger
+
+const hamburgerAbout = document.querySelector('#hamburger-about');
+const navMenuAbout = document.querySelector('#nav-menu-about'); 
+
+hamburgerAbout.addEventListener('click', function(){
+    hamburgerAbout.classList.toggle('hamburger-active');
+    navMenuAbout.classList.toggle('hidden');
+});
+
+const askAbout = document.querySelector('#ask');
+const deskripsilineAbout = document.querySelector('#deskripsi-line'); 
+
+askAbout.addEventListener('click', function(){
+    askAbout.classList.toggle('ask-active');
+    navMenuAbout.classList.toggle('hidden');
+});
     </script>
 </body>
 </html>
