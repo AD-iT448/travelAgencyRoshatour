@@ -46,6 +46,8 @@
                 titleAlamat:"Alamat",
                 titlePesan:"Pesan",
                 titleKirim:"Kirim",
+                
+
             },
             en: {
                 mainTitle: "We Serve with Safety",
@@ -68,6 +70,7 @@
                 titleAlamat:"Address",
                 titlePesan:"Message",
                 titleKirim:"Send",
+                
             }
         };
 
@@ -93,6 +96,7 @@
             alamatData.textContent = translations[lang].titleAlamat;
             pesanData.textContent = translations[lang].titlePesan;
             kirimBtn.textContent = translations[lang].titleKirim;
+            
         });
 
         //Navbar fixed
