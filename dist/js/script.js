@@ -158,6 +158,28 @@ if(darkToggle.checked){
 });
 
 
+
+// Tombol Airport
+function sendToWhatsAppAirport(){
+    const urlToWhatsAppHalfday = `https://wa.me/6281241539225?text=Halo, Tim Roshatour,Saya ingin layanan Airport`;
+
+    window.open(urlToWhatsAppHalfday,"_blank");
+}
+
+
+// Tombol FullDAY
+function sendToWhatsAppFullDay(){
+    const urlToWhatsAppHalfday = `https://wa.me/6281241539225?text=Halo, Tim Roshatour,Saya ingin layanan FullDay`;
+
+    window.open(urlToWhatsAppHalfday,"_blank");
+}
+
+// Tombol HALFDAY
+function sendToWhatsAppHalfDay(){
+    const urlToWhatsAppHalfday = `https://wa.me/6281241539225?text=Halo, Tim Roshatour,Saya ingin layanan Halfday`;
+
+    window.open(urlToWhatsAppHalfday,"_blank");
+}
 // KONTAK
 
 function sendToWhatsApp(){
