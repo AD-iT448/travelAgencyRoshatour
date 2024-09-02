@@ -38,7 +38,7 @@
                 hubungiAdminDua: "Hubungi Admin",
                 hubungiAdminTiga: "Hubungi Admin",
                 portofoliopageKami: "Portofolio",
-                deskripsiPagePort:"Lihatlah beberapa perjalanan yang telah kami buat untuk para pelanggan kami! Di bawah ini adalah galeri yang menampilkan gambar-gambar dari paket wisata kami yang paling populer",
+                deskripsiPortLink:"Lihatlah beberapa perjalanan yang telah kami buat untuk para pelanggan kami! Di bawah ini adalah galeri yang menampilkan gambar-gambar dari paket wisata kami yang paling populer",
                 deskripsiPageDown:"Kami siap membantu Anda merencanakan perjalanan yang sempurna!",
                 judulPageKontakKami:"Kontak Kami",
                 deskripsiPageKontak:"Jika Anda tertarik untuk mengetahui lebih lanjut atau ingin berkonsultasi langsung dengan tim kami, jangan ragu untuk menghubungi kami. Anda dapat Mengirim pesan WhatsApp melalui formulir di bawah ini:",
